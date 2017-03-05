@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="marks_form_view" model="ir.ui.view">
+        <field name="name">Marks Form View</field>
+        <field name="model">marks</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="student_id"/>
+                            <field name="course_id"/>
+                        </group>
+                        <group>
+                            <field name="exam1"/>
+                            <field name="exam2"/>
+                            <field name="extra"/>
+                            <field name="average"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="marks_tree_view" model="ir.ui.view">
+        <field name="name">Marks Tree View</field>
+        <field name="model">marks</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_id"/>
+                <field name="course_id"/>
+                <field name="exam1"/>
+                <field name="exam2"/>
+                <field name="extra"/>
+                <field name="average"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>
